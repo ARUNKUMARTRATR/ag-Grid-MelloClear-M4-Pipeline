@@ -1,16 +1,21 @@
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { ManagerComponent } from './manager/manager.component';
+import { UnderwriterComponent } from './underwriter/underwriter.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
   {
-    path: 'dashboard',
-    component: DashboardComponent
+    path: 'underwriter',
+    component: UnderwriterComponent
+  },
+  {
+    path: 'manager',
+    component: ManagerComponent
   },
   {
     path: '**',
-    redirectTo: 'dashboard'
+    redirectTo: 'underwriter'
   }
 ];
 

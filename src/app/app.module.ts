@@ -4,13 +4,15 @@ import { AgGridModule } from 'ag-grid-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import 'ag-grid-enterprise';
+import { UnderwriterComponent } from './underwriter/underwriter.component';
+import { ManagerComponent } from './manager/manager.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
-  ],
+    UnderwriterComponent,
+    ManagerComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
