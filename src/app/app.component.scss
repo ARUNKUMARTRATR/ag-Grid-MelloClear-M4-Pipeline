@@ -1,0 +1,40 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .tool {
+    width: 100%;
+    background-color: rgb(74, 15, 129);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    .paragraph {
+      margin-left: 40px;
+      font-size: 35px;
+    }
+}
+.menu {
+  margin-right: 3%;
+  background-color: rgb(72, 57, 85);
+  color: white;
+  width: 150px;
+  height: 54%;
+  border-radius: 15px;
+}
+.span {
+  font-size: 15px;
+  cursor: pointer;
+  :hover {
+    background-color: rgb(209, 201, 201);
+  }
+}
+.m4pipeline {
+  width: 130px;
+  height: 30px;
+  font-size: 14px;
+  margin-left: 10px;
+  background-color: rgb(111, 56, 136);
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  padding: 0px 5px 0px 5px;
+  text-align: center;
+}

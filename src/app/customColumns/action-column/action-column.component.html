@@ -1,0 +1,30 @@
+<div style="display: flex;">
+  <button mat-icon-button>
+    <mat-icon>visibility</mat-icon>
+  </button>
+  <button mat-icon-button>
+  <mat-icon class="arrow">arrow_circle_down</mat-icon>
+  </button>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" xPosition="before">
+    <button mat-menu-item>
+      <span>Lite M4Docs</span>
+    </button>
+    <button mat-menu-item>
+      <span>Public Notes</span>
+    </button>
+    <mat-divider style="margin: 9px;"></mat-divider>
+    <button mat-menu-item>
+      <mat-icon>brush</mat-icon>
+      <span>Highlight</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>bookmark_border</mat-icon>
+      <span>Tag</span>
+    </button>
+  </mat-menu>
+
+</div>

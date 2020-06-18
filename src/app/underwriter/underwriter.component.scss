@@ -1,0 +1,15 @@
+::ng-deep.mat-tab-label,
+::ng-deep.mat-tab-label-active {
+  min-width: 0 !important;
+  padding: 7px !important;
+  margin-right: 20px !important;
+}
+button {
+  margin: 5%;
+}
+.outer {
+  margin-top: 1%;
+}
+.mat-elevation-z4 {
+  border-radius: 7px;
+}

@@ -1,1 +1,24 @@
+<mat-toolbar class="tool">
+  <mat-toolbar-row>
+    <h2 class="paragraph">mello</h2>
+    <label style="font-family: 'Raleway', sans-serif;font-size: 30px;">clear</label>
+    <label class="m4pipeline">M4 PIPELINE</label>
+    <span class="example-spacer"></span>
+    <label for="text">{{user}}</label>&nbsp;<label style="color: rgb(207, 201, 201);margin-right: 1%;">as</label>
+    <button class="menu" mat-stroked-button [matMenuTriggerFor]="menu">{{menuTitle}}</button>
+    
+    <mat-menu #menu="matMenu">
+   
+    <mat-list role="list" style="width: 160px;" class="span">
+      <mat-list-item routerLink="/underwriter" (click)="onMenuChange('Underwriter')" role="listitem" ><span matBadge="8" matBadgeOverlap="false" matBadgeColor="accent">Underwriter</span></mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item (click)="onMenuChange('Processor')" role="listitem"><span matBadge="7" matBadgeOverlap="false" matBadgeColor="primary">Processor</span></mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item routerLink="/manager" (click)="onMenuChange('Manager')" role="listitem"><span matBadge="14" matBadgeOverlap="false" matBadgeColor="accent">Manager</span></mat-list-item>
+    </mat-list>
+
+    </mat-menu>
+    
+  </mat-toolbar-row>
+</mat-toolbar>
 <router-outlet></router-outlet>

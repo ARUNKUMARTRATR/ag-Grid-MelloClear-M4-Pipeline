@@ -1,1 +1,120 @@
-<p>underwriter works!</p>
+<div class="outer">
+    <mat-tab-group [dynamicHeight]="true" animationDuration="300ms" class="example-stretched-tabs mat-elevation-z4">
+        <mat-tab label="All Reviews (74)">
+            <ng-template matTabContent>
+                <ag-grid-angular style="width: 99.5%;height: 630px; margin: 3px;" class="ag-theme-balham"
+                    [columnDefs]="columnDefs" (gridReady)="onGridReady($event)" [animateRows]="true"
+                    [enableSorting]="true" [enableFilter]="true" [enableColResize]="true"
+                    [frameworkComponents]="customCells" [sortingOrder]="sortingOrder" [pagination]="true">
+                </ag-grid-angular>
+            </ng-template>
+        </mat-tab>
+        <mat-tab label="Submission Reviews (14)">
+            <ng-template matTabContent>
+                <ag-grid-angular style="width: 99.5%; height: 630px; margin: 3px;" class="ag-theme-balham"
+                    [columnDefs]="columnDefs" (gridReady)="onGridReady($event)" [animateRows]="true"
+                    [enableSorting]="true" [enableFilter]="true" [enableColResize]="true"
+                    [frameworkComponents]="customCells" [sortingOrder]="sortingOrder" [pagination]="true">
+                </ag-grid-angular>
+            </ng-template>
+        </mat-tab>
+        <mat-tab label="Condition Reviews (53)">
+            <ng-template matTabContent>
+                <ag-grid-angular style="width: 99.5%; height: 630px; margin: 3px;" class="ag-theme-balham"
+                    [columnDefs]="columnDefs" (gridReady)="onGridReady($event)" [animateRows]="true"
+                    [enableSorting]="true" [enableFilter]="true" [enableColResize]="true"
+                    [frameworkComponents]="customCells" [sortingOrder]="sortingOrder" [pagination]="true">
+                </ag-grid-angular>
+            </ng-template>
+        </mat-tab>
+        <div>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+            <mat-tab disabled>
+                <ng-template mat-tab-label>
+                </ng-template>
+            </mat-tab>
+        </div>
+        <mat-tab disabled>
+            <ng-template mat-tab-label>
+                <label style="color: black;">Last refreshed {{date.getUTCHours()}}h {{date.getMinutes()}}m
+                    {{date.getUTCSeconds()}} ago</label>
+            </ng-template>
+        </mat-tab>
+        <mat-tab disabled>
+            <ng-template mat-tab-label>
+                <button mat-icon-button>
+                    <mat-icon style="color: black;">sync</mat-icon>
+                </button>
+                <button mat-raised-button color='accent'>
+                    <mat-icon>search</mat-icon>
+                </button>
+            </ng-template>
+        </mat-tab>
+        <mat-tab disabled>
+            <ng-template mat-tab-label>
+                <button mat-raised-button color='accent'>
+                    <mat-icon style="transform: rotate(-90deg);">wrap_text</mat-icon>
+                </button>
+                <button mat-raised-button color='accent'>
+                    <mat-icon>exit_to_app</mat-icon>
+                </button>
+            </ng-template>
+        </mat-tab>
+
+    </mat-tab-group>
+</div>
